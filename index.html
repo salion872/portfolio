@@ -6,19 +6,19 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li id="logo">
-                        <img src="3e518eb0805324e09b2c65283c67be2a.jpg" class="logo-img">
+           <nav>
+                <div id="logo">
+                <img src="3e518eb0805324e09b2c65283c67be2a.jpg" class="logo-img">
                         <a href="#" class="logo-text">Ange lionel</a>
-                    </li>
+                </div>
+            <div class="navlink"> 
+                <ul>
                     <li>
                         <a href="#contact"> Contact </a>
                     </li>
                     <li>
                         <a href="#blog">Blog</a>
-                    </li>
+                    </li> 
                     <li>
                         <a href="#about"> A Propos </a>
                     </li>
@@ -26,7 +26,10 @@
                         <a href="#home"> Acceuil </a>
                     </li>
                 </ul>
+                </div>
+                <img src="trois-points.png" alt="menu" class="menu">
             </nav>
+        <header>
            
         </header>
                     <!-- home section -->
@@ -140,4 +143,12 @@
 
 
     </body>
+    <script>
+        const menu = document.querySelector(".menu")
+        const navLink = document.querySelector(".navlink")
+
+        menu.addEventListener('click',()=>{
+            navLink.classList.toggle('mobile-menu')
+        })
+    </script>
 </html>
