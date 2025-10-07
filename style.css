@@ -222,12 +222,12 @@ input {
     
   }
   .navlink{
-    background-color: rgba(222, 184, 135, 0.668);
+    background-color: rgb(222, 184, 135);
     justify-content: center;
     position: absolute;
-    border-radius: 8%;
+    border-radius: 4%;
     top: 60px;
-    right: 20px;
+    right: 1px;
     margin-right: -100%;
     transition: all 0.5s ease;
 }
